@@ -40,4 +40,5 @@ gulp.task("watch", [ 'sass', "html", 'img', 'font'], function () {
     gulp.watch('app/**/*.html' , ['html']);
     gulp.watch('app/img/**/*', ["img"]);
     gulp.watch('app/font/**/*', ["font"]);
+
 });

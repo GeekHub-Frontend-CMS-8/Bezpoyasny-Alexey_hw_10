@@ -1,0 +1,41 @@
+.navigation
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  @media (max-width: 700px)
+    flex-wrap: wrap
+    justify-content: center
+
+  &__logo
+    text-align: center
+    text-decoration: none
+    font: 400 50px $logo-font-family
+    color: $primary-text-color
+    @media (max-width: 700px)
+      flex-basis: 95%
+    &:hover
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)
+
+  &__list
+    display: flex
+    justify-content: space-between
+    @media (max-width: 700px)
+      flex-basis: 95%
+
+  &__link
+    display: block
+    width: 100%
+    min-width: 100px
+    padding: 30px 0 15px 0
+    font: 400 18px $primary-font-family
+    text-decoration: none
+    color: $primary-text-color
+    text-align: center
+    border-radius: 3px
+    @media (max-width: 490px)
+      min-width: 65px
+    @media (max-width: 360px)
+      min-width: 50px
+      font-size: $tiny-font-size
+    &:hover
+      background-color: $home-primary-color

@@ -1,0 +1,30 @@
+.footer
+  background-color: #68a097
+
+  &__social
+    width: 100%
+    max-width: 360px
+    margin: 0 auto
+    padding: 40px 0 50px 0
+    @media (max-width: 650px)
+      padding:  20px 0 25px 0
+    @media (max-width: 380px)
+      justify-content: space-around
+
+  &__social-item
+    max-width: 60px
+    min-height: 60px
+    background-color: #82c8bd
+    font-size: $big-font-size
+    @media (max-width: 450px)
+      max-width: 40px
+      min-height: 40px
+      font-size: $small-font-size
+    &-facebook:hover
+      background-color: #4f689e
+    &-twitter:hover
+      color: #4f689e
+    &-google:hover
+      background-color: #df5c64
+    &-linkedin:hover
+      background-color: #3e61af

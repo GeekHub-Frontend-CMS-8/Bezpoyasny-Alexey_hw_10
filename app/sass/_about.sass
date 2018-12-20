@@ -1,0 +1,103 @@
+.about
+  padding-bottom: 110px
+  @media (max-width: 700px)
+    padding-bottom: 70px
+  @media (max-width: 500px)
+    padding-bottom: 40px
+
+  &__wrap
+    background: #665464 url("../img/about-bg.png") no-repeat center
+
+  &__navigation-link
+    &:hover
+      background-color: #91778e
+
+  &__title
+    margin: 130px 0 35px 0
+    @media (max-width: 700px)
+      margin: 60px 0 25px 0
+
+  &__text
+    margin-bottom: 60px
+    @media (max-width: 700px)
+      margin-bottom: 40px
+
+  &__title-team
+    position: relative
+    width: 100%
+    max-width: 275px
+    margin: 0 auto
+    padding: 15px 0
+    font: 900 25px $primary-font-family
+    color: $primary-text-color
+    text-align: center
+    text-transform: uppercase
+    background-color: $team-second-color
+    border-radius: 5px
+    &:before
+      border: 20px solid transparent
+      border-top-color: $team-second-color
+      position: absolute
+      top: 100%
+      right: 43%
+      content: ''
+
+  &__list
+    display: flex
+    justify-content: space-between
+    margin-top: 60px
+    @media (max-width: 910px)
+      flex-wrap: wrap
+
+  &__item
+    flex-basis: 24%
+    margin: 0 1%
+    background-color: rgba(77, 63, 75, 0.5)
+    padding: 50px 0 30px 0
+    @media (max-width: 910px)
+      flex-basis: 48%
+      margin-top: 20px
+    @media (max-width: 475px)
+      flex-basis: 98%
+
+    &-title
+      font: 900 25px $primary-font-family
+      color: #c7b6c5
+      margin: 30px 0 15px 0
+    &:hover
+      background-color: rgba(77, 63, 75, 0.8)
+    &:hover .about__img-wrap
+      border: 5px solid #df5c64
+    &:hover .about__item-title
+      color: $primary-text-color
+    &:hover .about__position
+      color: #ff8973
+    &:hover .social__item-facebook
+      background-color: #4f689e
+    &:hover .social__item-twitter
+      background-color: #74c7d5
+    &:hover .social__item-google
+      background-color: #df5c64
+    &:hover .social__item-linkedin
+      background-color: #3e61af
+
+  &__img
+    max-width: 100%
+    height: auto
+
+  &__img-wrap
+    width: 100%
+    max-width: 155px
+    height: 155px
+    margin: 0 auto
+    border-radius: 100%
+    border: 5px solid #a1859e
+    overflow: hidden
+
+  &__position
+    font: 400 $tiny-font-size $primary-font-family
+    color: $team-second-color
+    text-align: center
+
+  &__social
+    margin-top: 35px

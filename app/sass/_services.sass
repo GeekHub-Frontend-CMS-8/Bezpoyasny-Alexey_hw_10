@@ -1,0 +1,62 @@
+.services
+  padding-bottom: 125px
+  @media (max-width: 700px)
+    padding-bottom: 70px
+
+  &__wrap
+    background: #b24a50 url("../img/services-bg.png") no-repeat top
+
+  &__navigation-link
+    &:hover
+      background-color: #df5c64
+
+  &__title
+    margin: 120px 0 45px 0
+    @media (max-width: 700px)
+      margin: 60px 0 25px 0
+
+  &__text
+    margin: 20px 0 120px 0
+    @media (max-width: 700px)
+      margin: 15px 0 50px 0
+
+  &__list
+    display: flex
+    justify-content: space-between
+    @media (max-width: 768px)
+      flex-wrap: wrap
+
+  &__item
+    width: 100%
+    max-width: 24%
+    margin: 0 1%
+    background-color: rgba(200, 83, 90, 0.8)
+    padding: 55px 0 45px 0
+    @media (max-width: 768px)
+      max-width: 48%
+      margin-top: 20px
+    @media (max-width: 490px)
+      max-width: 95%
+
+    &-title
+      font-size: 30px
+      margin: 35px 0 50px 0
+      @media (max-width: 1100px)
+        font-size: 20px
+
+    &-text
+      color: #fefefe
+      line-height: 20px
+
+  &__img-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    max-width: 120px
+    min-height: 120px
+    margin: 0 auto
+    border-radius: 100%
+    background-color: $primary-text-color
+    border: 5px solid #c45158
+    box-shadow: 0 0 0 5px $primary-text-color
