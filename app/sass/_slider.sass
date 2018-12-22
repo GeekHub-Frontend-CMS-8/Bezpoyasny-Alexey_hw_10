@@ -7,11 +7,6 @@
   text-align: left
   position: relative
   margin-bottom: 22px
-  @media (max-width: 1080px)
-    -moz-perspective: 1000px
-    -ms-perspective: 1000px
-    -webkit-perspective: 1000px
-    perspective: 1000px
 
 .csslider > input
   display: none
@@ -49,7 +44,8 @@
 .csslider > ul
   position: relative
   top: 30%
-  width: 916px
+  width: 100%
+  max-width: 916px
   height: 483px
   z-index: 1
   font-size: 0
@@ -63,6 +59,13 @@
   -moz-box-sizing: border-box
   -webkit-box-sizing: border-box
   box-sizing: border-box
+  @media (max-width: 1080px)
+    max-width: 700px
+    top: 35%
+    height: 450px
+  @media (max-width: 865px)
+    max-width: 500px
+
 
 .csslider > ul > li
   position: relative
@@ -168,6 +171,8 @@
   -moz-box-sizing: content-box
   -webkit-box-sizing: content-box
   box-sizing: content-box
+  @media (max-width: 650px)
+    display: none
 
 .csslider > .arrows label
   display: none
